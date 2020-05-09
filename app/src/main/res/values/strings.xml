@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Myself</string>
     <string name="yoo">Yoo!!</string>
+    <string name="intro">Selamat datang \n diAplikasi milik saya</string>
+    <string name="skip">Skip</string>
+    <string name="description_text">Description Text</string>
+    <string name="title_text">Title Text</string>
+    <string name="next">Next</string>
+    <string name="tampan_dan_berani">Tampan Dan Berani</string>
 </resources>
