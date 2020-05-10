@@ -8,7 +8,7 @@
     tools:context=".ViewPager">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minWidth="@dimen/dimen120"
@@ -17,12 +17,12 @@
         android:textColor="@color/black"
         android:backgroundTint="@color/btn_color"
         app:cornerRadius="@dimen/dimen20"
-        app:layout_constraintBottom_toTopOf="@+id/skip"
+        app:layout_constraintBottom_toTopOf="@+id/textSkip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/skip"
+        android:id="@+id/textSkip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
@@ -33,22 +33,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:id="@+id/IntroContainer"
+        android:id="@+id/indicatorsContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dimen8"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/button"/>
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/IntroSlideViewPager"
+        android:id="@+id/introSliderViewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/dimen8"
         android:overScrollMode="never"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/IntroContainer"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorsContainer"
         />
 
 

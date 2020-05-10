@@ -20,6 +20,6 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
 
-        }, 2000) //delay 2 detik sebelum masuk ViewPager
+        }, 1500) //delay sebelum masuk
     }
 }

@@ -19,6 +19,7 @@
         android:gravity="center"
         android:text="@string/title_text"
         android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
         android:textSize="18sp"/>
 
     <TextView
@@ -30,6 +31,7 @@
         android:gravity="center"
         android:text="@string/description_text"
         android:textColor="@color/grey"
-        android:textSize="12sp"/>
+        android:textSize="12sp"
+        android:fontFamily="@font/open_sans"/>
 
 </LinearLayout>
