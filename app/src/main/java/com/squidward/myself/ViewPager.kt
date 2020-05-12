@@ -20,7 +20,7 @@ class ViewPager : AppCompatActivity() {
     val preferenceShowIntro = "Intro"
 
     //isi dari view pager
-    private val introSliderAdapter = IntroSlideAdapter(
+    private val introSliderAdapter = IntroSliderAdapter(
         listOf(
             IntroSlide(
                 "Selamat Datang",

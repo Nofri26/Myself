@@ -7,11 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class IntroSlideAdapter (private val introSlides : List<IntroSlide>):
-    RecyclerView.Adapter<IntroSlideAdapter.IntroSlideViewHolder>(){
+class IntroSliderAdapter (private val introSlides : List<IntroSlide>):
+    RecyclerView.Adapter<IntroSliderAdapter.IntroSliderViewHolder>(){
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IntroSlideViewHolder {
-        return IntroSlideViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IntroSliderViewHolder {
+        return IntroSliderViewHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.slide_item_container,
                 parent,
@@ -24,11 +24,11 @@ class IntroSlideAdapter (private val introSlides : List<IntroSlide>):
         return introSlides.size
     }
 
-    override fun onBindViewHolder(holder: IntroSlideViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: IntroSliderViewHolder, position: Int) {
         holder.bind(introSlides[position])
     }
 
-    inner class IntroSlideViewHolder(view : View) : RecyclerView.ViewHolder(view) {
+    inner class IntroSliderViewHolder(view : View) : RecyclerView.ViewHolder(view) {
 
         private val textTitle = view.findViewById<TextView>(R.id.textTitle)
         private val textDescription = view.findViewById<TextView>(R.id.textDescription)
