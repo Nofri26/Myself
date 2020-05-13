@@ -20,8 +20,8 @@ class DailyAdapter(private val dailyList: List<DailyItem>) : RecyclerView.Adapte
     override fun onBindViewHolder(holder: DailyViewHolder, position: Int) {
         val currentItem = dailyList[position]
 
-        holder.imageView.setImageResource(currentItem.imageResource)
-        holder.textView1.text = currentItem.text1
+        holder.imageView.setImageResource(currentItem.imageResourceD)
+        holder.textView1.text = currentItem.textD1
         holder.textView2.text = currentItem.text2
     }
 
