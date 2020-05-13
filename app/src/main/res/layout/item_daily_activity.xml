@@ -10,30 +10,29 @@
         android:padding="@dimen/dimen8">
 
         <ImageView
-            android:id="@+id/img"
+            android:id="@+id/image_view"
             android:layout_width="@dimen/dimen50"
             android:layout_height="@dimen/dimen50"
             android:layout_marginEnd="@dimen/dimen8"
             android:src="@drawable/ic_accessibility" />
 
         <TextView
-            android:id="@+id/txtLine1"
+            android:id="@+id/text_view_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/img"
+            android:layout_toEndOf="@+id/image_view"
             android:text="Line 1"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtLine2"
+            android:id="@+id/text_view_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txtLine1"
-            android:layout_toEndOf="@id/img"
+            android:layout_toEndOf="@+id/image_view"
+            android:layout_below="@id/text_view_1"
             android:text="Line 2" />
-
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
