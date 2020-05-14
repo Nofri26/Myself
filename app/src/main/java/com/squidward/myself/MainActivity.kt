@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val homeFragment = HomeFragment()
         val dailyActivityFragment = DailyActivityFragment()
         val galleryFragment = GalleryFragment()
-        val musicFragment = MusicFragment()
+        val musicFragment = MusicVideoFragment()
         val profileFragment = ProfileFragment()
 
         makeCurrentFragment(homeFragment)
@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun makeCurrentFragment(fragment : Fragment) =
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flWrapper,fragment)
+            setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
+            replace(R.id.flWrapper,fragment, fragment.javaClass.getSimpleName())
             commit()
         }
 }

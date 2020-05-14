@@ -17,12 +17,11 @@ data class FriendItem(val imageResourceF : Int, val textF1 : String)
 
 class DailyActivityFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.fragment_daily_activity, container, false)
-
     private val listFriendActivity = listOf(
         FriendItem(R.drawable.gunung_putri2, "Nofri"),
+        FriendItem(R.drawable.gunung_putri, "Nofri"),
+        FriendItem(R.drawable.gunung_putri, "Nofri"),
+        FriendItem(R.drawable.gunung_putri, "Nofri"),
         FriendItem(R.drawable.gunung_putri, "Nofri"),
         FriendItem(R.drawable.tea_house1, "Nofri")
     )
@@ -30,8 +29,17 @@ class DailyActivityFragment : Fragment() {
     private val listDailyActivity = listOf(
         DailyItem(R.drawable.ic_image, "line 1", "line 2"),
         DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
+        DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
+        DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
+        DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
+        DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
+        DailyItem(R.drawable.ic_accessibility, "line 1", "line 2"),
         DailyItem(R.drawable.ic_home, "line 1", "line 2")
     )
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? =
+        inflater.inflate(R.layout.fragment_daily_activity, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
