@@ -11,11 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="279dp"
         android:background="@drawable/gunung_putri2"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -39,14 +39,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen30"
         android:justificationMode="inter_word"
         android:padding="@dimen/dimen8"
-        android:layout_marginTop="@dimen/dimen30"
         android:text="@string/deskripsi_diri"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,10 +100,10 @@
         android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dimen15"
+        android:layout_marginBottom="@dimen/dimen20"
         android:gravity="center"
         android:text="@string/about_the_app"
-        app:layout_constraintBottom_toBottomOf="    parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

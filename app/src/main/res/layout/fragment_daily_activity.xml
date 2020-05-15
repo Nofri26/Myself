@@ -7,6 +7,16 @@
     android:paddingTop="@dimen/dimen14"
     tools:context=".Fragments.DailyActivityFragment">
 
+    <TextView
+        android:id="@+id/txtFriendList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/friend_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listRecycleViewFriend"
             android:layout_width="wrap_content"
@@ -14,18 +24,28 @@
             android:layout_marginTop="@dimen/dimen8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/txtFriendList" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:background="@color/grey"
-            android:id="@+id/listRecycleViewDaily"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/listRecycleViewFriend" />
+    <TextView
+        android:id="@+id/txtDialyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="@string/txtdaily"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listRecycleViewFriend" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecycleViewDaily"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDialyActivity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

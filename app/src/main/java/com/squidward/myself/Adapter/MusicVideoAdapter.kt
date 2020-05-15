@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.squidward.myself.Fragments.MusicFragment
-import com.squidward.myself.Fragments.VideosFragment
+import com.squidward.myself.Fragments.Musicvideo
 
 class MusicVideoAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
@@ -14,7 +14,7 @@ class MusicVideoAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, Fragmen
                 MusicFragment()
             }
             else -> {
-                return VideosFragment()
+                return Musicvideo()
             }
         }
     }
