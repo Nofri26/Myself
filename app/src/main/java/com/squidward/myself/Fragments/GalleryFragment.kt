@@ -12,8 +12,6 @@ import com.squidward.myself.R
 import kotlinx.android.synthetic.main.fragment_daily_activity.*
 import kotlinx.android.synthetic.main.fragment_gallery.*
 
-data class GalleryItem(val imageResource : Int)
-
 class GalleryFragment : Fragment() {
 
     override fun onCreateView(

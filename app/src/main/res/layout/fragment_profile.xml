@@ -76,7 +76,7 @@
         android:id="@+id/findMe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Find Me"
+        android:text="@string/find_me"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dimen15"
         android:gravity="center"
-        android:text="About The App"
+        android:text="@string/about_the_app"
         app:layout_constraintBottom_toBottomOf="    parent" />
 
 

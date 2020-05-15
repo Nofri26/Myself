@@ -13,14 +13,14 @@ import kotlinx.android.synthetic.main.fragment_music.*
 class MusicFragment : Fragment() {
 
     private val listMusicActivity = listOf(
-        MusicItem(R.drawable.ic_image, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_accessibility, "line 1", "line 2"),
-        MusicItem(R.drawable.ic_home, "line 1", "line 2")
+        MusicItem(R.drawable.dgd1, "Betrayed By The Game", "Dance Gavin Dance"),
+        MusicItem(R.drawable.bmth1, "Ludens", "Bring Me The Horizon"),
+        MusicItem(R.drawable.bmth2, "Wonderful Life", "Bring Me The Horizon"),
+        MusicItem(R.drawable.aa1, "The Final Episode", "Asking Alexandria"),
+        MusicItem(R.drawable.sws1, "James Dean & Audrey Hepburn", "Sleeping With Sirens"),
+        MusicItem(R.drawable.mmf1, "No Ordinary Love", "Memphis May Fire"),
+        MusicItem(R.drawable.cte1, "Machines", "Crown The Empire"),
+        MusicItem(R.drawable.cte2, "Memories of a Broken Heart", "Crown The Empire")
     )
 
     override fun onCreateView(

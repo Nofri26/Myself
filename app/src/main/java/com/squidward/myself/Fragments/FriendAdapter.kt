@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squidward.myself.R
 import kotlinx.android.synthetic.main.item_friend_list.view.*
 
+data class FriendItem(val imageResourceF : Int, val textF1 : String)
+
 class FriendAdapter(private val friendList: List<FriendItem>) : RecyclerView.Adapter<FriendAdapter.FriendViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FriendViewHolder {

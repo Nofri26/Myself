@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squidward.myself.R
 import kotlinx.android.synthetic.main.item_gallery.view.*
 
+data class GalleryItem(val imageResource : Int)
+
 class GalleryAdapter(private val galleryList: List<GalleryItem>) : RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GalleryViewHolder {

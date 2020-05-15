@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squidward.myself.R
 import kotlinx.android.synthetic.main.item_daily_activity.view.*
 
+data class DailyItem(val imageResourceD : Int, val textD1 : String, val text2 : String)
+
 class DailyAdapter(private val dailyList: List<DailyItem>) : RecyclerView.Adapter<DailyAdapter.DailyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DailyViewHolder {
