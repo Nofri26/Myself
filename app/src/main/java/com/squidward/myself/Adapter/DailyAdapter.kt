@@ -1,4 +1,4 @@
-package com.squidward.myself.Fragments
+package com.squidward.myself.Adapter
 
 import android.view.LayoutInflater
 import android.view.View

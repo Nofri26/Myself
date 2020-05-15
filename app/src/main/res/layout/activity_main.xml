@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/dimen15"
-    tools:context=".MainActivity">
+    tools:context=".Main.MainActivity">
 
     <FrameLayout
         android:id="@+id/flWrapper"
-        android:padding="@dimen/dimen6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottomNavigation"/>

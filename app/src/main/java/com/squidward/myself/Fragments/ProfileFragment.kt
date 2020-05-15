@@ -68,7 +68,7 @@ class ProfileFragment : Fragment() {
             val uri = Uri.parse("geo:-6.925959, 107.648638?q=6°55'33.6\"S+107°38'55.2\"E")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             try {
-                Toast.makeText(activity, "Open WhatsApp", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "Open Maps", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             } catch (e: ActivityNotFoundException) {
                 startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("geo:-6.925959, 107.648638?q=6°55'33.6\"S+107°38'55.2\"E")))

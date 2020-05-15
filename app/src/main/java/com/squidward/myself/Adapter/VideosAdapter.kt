@@ -1,4 +1,4 @@
-package com.squidward.myself.Fragments
+package com.squidward.myself.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -15,13 +15,15 @@ import kotlinx.android.synthetic.main.item_videos.view.*
 
 data class VideosItem(val videoIds: String, val text1: String)
 
-internal class VideosAdapter( private val videoList: List<VideosItem>, private val lifecycle: Lifecycle) : RecyclerView.Adapter<VideosAdapter.ViewHolder>() {
+internal class VideosAdapter(private val videoList: List<VideosItem>, private val lifecycle: Lifecycle) : RecyclerView.Adapter<VideosAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val youTubePlayerView = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_videos, parent, false) as YouTubePlayerView
         lifecycle.addObserver(youTubePlayerView)
-        return ViewHolder(youTubePlayerView)
+        return ViewHolder(
+            youTubePlayerView
+        )
     }
 
     override fun onBindViewHolder(

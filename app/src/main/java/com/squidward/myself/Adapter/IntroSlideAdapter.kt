@@ -1,4 +1,4 @@
-package com.squidward.myself
+package com.squidward.myself.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squidward.myself.Main.IntroSlide
+import com.squidward.myself.R
 
 class IntroSliderAdapter (private val introSlides : List<IntroSlide>):
     RecyclerView.Adapter<IntroSliderAdapter.IntroSliderViewHolder>(){

@@ -1,4 +1,4 @@
-package com.squidward.myself
+package com.squidward.myself.Main
 
 data class IntroSlide (
     val title: String,

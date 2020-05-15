@@ -3,14 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="@dimen/dimen14"
     tools:context=".Fragments.GalleryFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listRecycleViewGallery"
-        android:paddingRight="@dimen/dimen15"
-        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_gallery"/>
+        android:clipToPadding="false"
+        android:paddingRight="@dimen/dimen15"
+        tools:listitem="@layout/item_gallery" />
 
 </RelativeLayout>

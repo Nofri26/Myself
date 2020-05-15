@@ -1,4 +1,4 @@
-package com.squidward.myself.Fragments
+package com.squidward.myself.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squidward.myself.R
-import kotlinx.android.synthetic.main.item_daily_activity.view.*
 import kotlinx.android.synthetic.main.item_music.view.*
 
 data class MusicItem(val imageResource: Int, val text1: String, val text2: String)

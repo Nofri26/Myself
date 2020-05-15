@@ -1,9 +1,10 @@
-package com.squidward.myself
+package com.squidward.myself.Main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.squidward.myself.Fragments.*
+import com.squidward.myself.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +35,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun makeCurrentFragment(fragment : Fragment) =
         supportFragmentManager.beginTransaction().apply {
-            setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
+            setCustomAnimations(
+                R.anim.design_bottom_sheet_slide_in,
+                R.anim.design_bottom_sheet_slide_out
+            )
             replace(R.id.flWrapper,fragment, fragment.javaClass.getSimpleName())
             commit()
         }

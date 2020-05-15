@@ -1,4 +1,4 @@
-package com.squidward.myself
+package com.squidward.myself.Main
 
 import android.content.Context
 import android.content.Intent
@@ -11,8 +11,9 @@ import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
 import androidx.viewpager2.widget.ViewPager2
+import com.squidward.myself.Adapter.IntroSliderAdapter
+import com.squidward.myself.R
 import kotlinx.android.synthetic.main.activity_view_pager.*
-import kotlinx.android.synthetic.main.slide_item_container.*
 
 class ViewPager : AppCompatActivity() {
 
@@ -20,25 +21,26 @@ class ViewPager : AppCompatActivity() {
     val preferenceShowIntro = "Intro"
 
     //isi dari view pager
-    private val introSliderAdapter = IntroSliderAdapter(
-        listOf(
-            IntroSlide(
-                "Selamat Datang",
-                "Aplikasi ini berisi data diri dan berbagai hal tenatang saya.",
-                R.drawable.squidward_icon
-            ),
-            IntroSlide(
-                "Daily Activity",
-                "Disini saya menceritakan keseharian saya, mulai dari bangun tidur hingga tidur lagi",
-                R.drawable.squidward_welcom
-            ),
-            IntroSlide(
-                "Gallery and Music",
-                "Beberapa Foto saya dan Musik yang saya suka",
-                R.drawable.ic_music_video_black_24dp
+    private val introSliderAdapter =
+        IntroSliderAdapter(
+            listOf(
+                IntroSlide(
+                    "Selamat Datang",
+                    "Aplikasi ini berisi data diri dan berbagai hal tenatang saya.",
+                    R.drawable.squidward_icon
+                ),
+                IntroSlide(
+                    "Daily Activity",
+                    "Disini saya menceritakan keseharian saya, mulai dari bangun tidur hingga tidur lagi",
+                    R.drawable.squidward_welcom
+                ),
+                IntroSlide(
+                    "Gallery and Music",
+                    "Beberapa Foto saya dan Musik yang saya suka",
+                    R.drawable.ic_music_video_black_24dp
+                )
             )
         )
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

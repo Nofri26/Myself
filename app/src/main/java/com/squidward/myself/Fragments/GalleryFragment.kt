@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.squidward.myself.Adapter.GalleryAdapter
+import com.squidward.myself.Adapter.GalleryItem
 
 import com.squidward.myself.R
-import kotlinx.android.synthetic.main.fragment_daily_activity.*
 import kotlinx.android.synthetic.main.fragment_gallery.*
 
 class GalleryFragment : Fragment() {
@@ -31,7 +31,8 @@ class GalleryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listRecycleViewGallery.adapter = GalleryAdapter(listGallery)
+        listRecycleViewGallery.adapter =
+            GalleryAdapter(listGallery)
         listRecycleViewGallery.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         listRecycleViewGallery.setHasFixedSize(true)
     }

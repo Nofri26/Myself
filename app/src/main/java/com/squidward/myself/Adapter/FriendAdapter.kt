@@ -1,4 +1,4 @@
-package com.squidward.myself.Fragments
+package com.squidward.myself.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +16,9 @@ class FriendAdapter(private val friendList: List<FriendItem>) : RecyclerView.Ada
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FriendViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_friend_list, parent, false)
 
-        return FriendViewHolder(itemView)
+        return FriendViewHolder(
+            itemView
+        )
     }
 
     override fun onBindViewHolder(holder: FriendViewHolder, position: Int) {

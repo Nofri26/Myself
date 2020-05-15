@@ -1,10 +1,10 @@
-package com.squidward.myself
+package com.squidward.myself.Main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import androidx.core.os.HandlerCompat
+import com.squidward.myself.R
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class SplashScreenActivity : AppCompatActivity() {
         handler = Handler()
         handler.postDelayed({
 
-            val intent = Intent(this,ViewPager::class.java)
+            val intent = Intent(this, ViewPager::class.java)
             startActivity(intent)
             finish()
 
