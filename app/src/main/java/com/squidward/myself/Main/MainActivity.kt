@@ -7,6 +7,29 @@ import com.squidward.myself.Fragments.*
 import com.squidward.myself.R
 import kotlinx.android.synthetic.main.activity_main.*
 
+/*
+* NIM   : 10117139
+* Nama  : Nofrizal
+* Kelas : AKB-4 / IF-4
+* UTS
+*
+* Update :
+* - 6 Mei =
+*       - Membuat Halaman Awal (SplashScreen)
+* - 9 Mei =
+*       - ViewPager Selesai
+* - 11 Mei =
+*       - Membuat Shared Preference
+*   12 Mei =
+*       - selesai BottomNavigation
+*   13 Mei =
+*       - RecyclerView Daily Activity
+*   14 Mei - 15 Mei =
+*       - Menambahkan Item dan menu lain
+*   16 Mei = Finish Project
+*
+* */
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

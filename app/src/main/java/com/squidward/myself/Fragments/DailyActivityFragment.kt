@@ -25,10 +25,17 @@ class DailyActivityFragment : Fragment() {
             R.drawable.juan,
             "Juan Lazuardo"
         ),
-        FriendItem(R.drawable.adit, "Aditya"),
+        FriendItem(
+            R.drawable.adit,
+            "Aditya"
+        ),
         FriendItem(
             R.drawable.iqbal,
             "Iqbal Atma Muliawan"
+        ),
+        FriendItem(
+            R.drawable.angga,
+            "Angga Prakasa"
         ),
         FriendItem(
             R.drawable.adhitya,

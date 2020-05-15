@@ -65,6 +65,16 @@ class MusicFragment : Fragment() {
             "Crown The Empire"
         ),
         MusicItem(
+            R.drawable.kina,
+            "Get you the moon",
+            "Kina"
+        ),
+        MusicItem(
+            R.drawable.jz,
+            "always, i'll care",
+            "Jeremy Zucker"
+        ),
+        MusicItem(
             R.drawable.cte2,
             "Memories of a Broken Heart",
             "Crown The Empire"

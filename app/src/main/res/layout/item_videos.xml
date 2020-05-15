@@ -7,4 +7,4 @@
     android:layout_height="wrap_content"
     android:layout_margin="1dp"
     app:autoPlay="false"
-    app:showFullScreenButton="false" />
+    app:showFullScreenButton="true" />
